@@ -44,7 +44,7 @@ def main():
                                 checked_points.add((l, n))
                             while gameboard[l][o].isdigit():
                                 o += 1
-                                checked_points.add((l, n))
+                                checked_points.add((l, o))
                             numbers_around.append(int(gameboard[l][n+1:o])) 
                             
                 if len(numbers_around) == 2:
