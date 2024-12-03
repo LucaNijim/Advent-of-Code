@@ -17,5 +17,5 @@ for num in v1
     global p2sol += num * length(filter( (x)-> x==num, v2))
 end
 
-print("Part 1 solution: $p1sol\n")
+print("Part 1 solution: $p1sol")
 print("Part 2 solution: $p2sol")
