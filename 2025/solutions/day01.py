@@ -1,4 +1,4 @@
-from math import floor, ceil
+from math import floor
 def ints_in_interval(a, b):
     return floor(b)-floor(a)
 
