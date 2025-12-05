@@ -1,9 +1,9 @@
 def range_union(range1: tuple[int], comp_range: tuple[int]):
     if comp_range[0] <= range1[0] and comp_range[1] >= range1[1]:
         return comp_range[0], comp_range[1]
-    elif comp_range[0] <= range1[0] and comp_range[1] >= range1[0]:
+    elif comp_range[0] <= range1[0] <= comp_range[1]:
         return comp_range[0], range1[1]
-    elif comp_range[0] <= range1[1] and comp_range[1] >= range1[1]:
+    elif comp_range[0] <= range1[1] <= comp_range[1]:
         return range1[0], comp_range[1]
     elif comp_range[0] >= range1[0] and comp_range[1] <= range1[1]:
         return range1[0], range1[1]
