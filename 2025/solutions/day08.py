@@ -35,7 +35,7 @@ def solve(text):
             pt1_sol = 1
             for circ in sorted(list(circuits), key=len)[-3:]:
                 pt1_sol *= len(circ)
-    
+            
     return f"Part 1 solution: {pt1_sol}\nPart 2 solution: {pt2_sol}"
 
 if __name__ == "__main__":
